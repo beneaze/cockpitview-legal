@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy — CockpitView</title>
+<style>
+:root{--bg:#0e1014;--panel:#151922;--text:#e8eaed;--dim:#9aa0ac;--sun:#4fd1e8;--line:#252a35}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:2.5rem 1.25rem 4rem}
+h1{font-size:1.6rem;margin:0 0 .35rem}
+h2{font-size:1.05rem;margin:2rem 0 .5rem}
+p{color:var(--dim);margin:0 0 .85rem}
+strong{color:var(--text);font-weight:600}
+a{color:var(--sun)}
+nav{display:flex;flex-wrap:wrap;gap:.75rem;margin:0 0 2rem;padding-bottom:1rem;
+  border-bottom:1px solid var(--line);font-size:.9rem}
+nav a{text-decoration:none}
+nav a[aria-current]{color:var(--text);font-weight:600}
+.langs{font-size:.85rem;color:var(--dim);margin:.5rem 0 1.75rem}
+.langs a{margin-right:.6rem}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;
+  padding:1rem 1.1rem;margin:0 0 1rem}
+.card p{margin:0 0 .2rem}
+.card .name{color:var(--text);font-weight:600}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);
+  font-size:.85rem;color:var(--dim)}
+@media(prefers-color-scheme:light){
+  :root{--bg:#fff;--panel:#f6f7f9;--text:#12151a;--dim:#4d5560;--sun:#0a7d93;--line:#e3e6eb}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a href="index.html">Support</a><a href="privacy.html" aria-current="page">Privacy</a><a href="impressum.html">Impressum</a></nav>
+<h1>Privacy Policy</h1>
+<p><em>Last updated: 24 November 2026</em></p>
+<p>CockpitView has no accounts, no analytics, no advertising and no tracking. The developer does not run any server and receives no data from the app.</p>
+<h2>What the app uses on your device</h2>
+<p><strong>Location</strong>: your flight's speed, track, altitude and position on the navigation display. Used only while the app is open.</p>
+<p><strong>Motion and barometer</strong>: pitch, roll, heading and vertical speed.</p>
+<p><strong>Settings</strong> (units, display style, calibration) stay on your device.</p>
+<h2>What leaves your device, and where it goes</h2>
+<p>To provide some features, the app sends requests directly from your device to these services. The requests carry no name, account or device identifier.</p>
+<div class="card"><p class="name">Flight lookup (plane mode)</p><p>Sent to: adsbdb.com and hexdb.io, public flight-route APIs</p><p>What is sent: The flight's callsign, e.g. <code>DLH400</code></p></div>
+<div class="card"><p class="name">INIT REQUEST (plane mode, optional)</p><p>Sent to: simbrief.com</p><p>What is sent: The SimBrief username you entered, to fetch your latest SimBrief plan</p></div>
+<div class="card"><p class="name">Offline flight download (plane mode)</p><p>Sent to: Amazon Web Services, Open Data terrain tiles</p><p>What is sent: Requests for the map tiles along the flight's route</p></div>
+<div class="card"><p class="name">Speed limit (car and bike, can be switched off in the menu)</p><p>Sent to: OpenStreetMap Overpass API (<code>overpass-api.de</code>)</p><p>What is sent: Your current position, about once every 350 m</p></div>
+<div class="card"><p class="name">Route height profile (car and bike)</p><p>Sent to: Amazon Web Services, Open Data terrain tiles (<code>s3.amazonaws.com</code>)</p><p>What is sent: Requests for the map tiles that cover the planned route</p></div>
+<div class="card"><p class="name">Destination search and routing (car and bike)</p><p>Sent to: Apple Maps</p><p>What is sent: Your search text, position and destination</p></div>
+<div class="card"><p class="name">"Open in Google Maps" (car and bike, only when you tap it)</p><p>Sent to: Google Maps</p><p>What is sent: Your position and destination</p></div>
+
+<p>Downloaded flights are stored only on your device and are deleted a week after the flight's date.</p>
+<p>Each service handles these requests under its own privacy policy:
+<a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap Foundation</a>,
+<a href="https://aws.amazon.com/privacy/">Amazon Web Services</a>,
+<a href="https://navigraph.com/legal/privacy-policy">Navigraph (SimBrief)</a>,
+<a href="https://www.apple.com/legal/privacy/">Apple</a>,
+<a href="https://policies.google.com/privacy">Google</a>.</p>
+<h2>Children</h2>
+<p>The app does not knowingly collect data from anyone, including children.</p>
+<h2>Controller and contact</h2>
+<p>Questions about this policy, or requests under the GDPR:</p><div class="card">
+<p class="name">Benedikt Lezius</p>
+<p>Guardinistraße 139<br>81375 München</p>
+<p><a href="mailto:benedikt.lezius@hotmail.de">benedikt.lezius@hotmail.de</a></p>
+</div>
+<footer>CockpitView · Benedikt Lezius ·
+<a href="mailto:benedikt.lezius@hotmail.de">benedikt.lezius@hotmail.de</a></footer>
+</div>
+</body>
+</html>
